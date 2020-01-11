@@ -1,6 +1,35 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background: radial-gradient(circle, rgba(76,228,244,1) 0%, rgba(136,189,231,1) 57%, rgba(99,137,195,1) 100%);
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  padding: 25px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+  top: 25px;
+  background-color: #c7e4e7;
+}
+
+.letters {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.letter {
+  justify-content: center;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
 ul {
   list-style: none;
 }

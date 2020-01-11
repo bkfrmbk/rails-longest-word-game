@@ -9,11 +9,9 @@ class PagesController < ApplicationController
   end
 
   def score
-    # raise
     @letter_array = params[:letter_array].split(' ')
     @input = params[:input].upcase
     @result = results(@input, @letter_array)
-    raise
   end
 
   private
@@ -37,7 +35,7 @@ class PagesController < ApplicationController
     score = 0
     if word?(input) && letters?(input, letter_array)
       results = 'Great Job!'
-      score +=
+      score += 1
     elsif !letters?(input, letter_array)
       results = 'Not in the grid!'
     elsif !word?(input)
