@@ -34,8 +34,8 @@ class PagesController < ApplicationController
   def results(input, letter_array)
     score = 0
     if word?(input) && letters?(input, letter_array)
-      results = 'Great Job!'
       score += 1
+      results = "Great Job! Your score is #{score}"
     elsif !letters?(input, letter_array)
       results = 'Not in the grid!'
     elsif !word?(input)
